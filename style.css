@@ -1,5 +1,21 @@
-body {
+.client {
+  --background-color: black;
+  --regular-text-color: #FFFFFF99;
+  --odd-text-color: #FFFFFF70;
+  --foreground-color: #222;
+} 
+
+.client {
   margin: 0;
+  background: black;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--foreground-color);
 }
 
 h1,
@@ -9,6 +25,7 @@ span,
 div,
 textarea {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--regular-text-color);
 }
 
 h1,
@@ -29,8 +46,21 @@ textarea {
   font-size: 0.95rem;
 }
 
-textarea {
+.msg-log {
+  padding-left: 1rem;
+  background: var(--background-color);
+}
+
+.msg-input {
   position: fixed;
   bottom: 0px;
+  height: 3.5rem;
   width: 100%;
+  background: var(--foreground-color);
+  border: 0;
+  border-top: 1px solid var(--regular-text-color);
+}
+
+p:nth-child(odd) {
+  color: var(--odd-text-color);
 }
