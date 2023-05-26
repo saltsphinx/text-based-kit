@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+h1,
+p,
+a,
+span,
+div,
+textarea {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p,
+a,
+span,
+div,
+textarea {
+  font-size: 0.95rem;
+}
+
+textarea {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
