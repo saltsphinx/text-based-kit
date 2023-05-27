@@ -1,7 +1,6 @@
 .client {
   --background-color: black;
   --regular-text-color: #FFFFFF99;
-  --odd-text-color: #FFFFFF70;
   --foreground-color: #222;
 } 
 
@@ -14,8 +13,8 @@ header {
   position: sticky;
   top: 0;
   left: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--foreground-color);
+  padding: 0.2rem 1rem;
+  background-color: var(--background-color);
 }
 
 h1,
@@ -59,8 +58,5 @@ textarea {
   background: var(--foreground-color);
   border: 0;
   border-top: 1px solid var(--regular-text-color);
-}
-
-p:nth-child(odd) {
-  color: var(--odd-text-color);
+  resize: none;
 }
