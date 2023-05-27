@@ -1,11 +1,25 @@
 {
-  "devDependencies": {
-    "@types/jest": "^29.5.1",
-    "jest": "^29.5.0",
-    "webpack": "^5.84.1",
-    "webpack-cli": "^5.1.1"
+  "name": "text-based-browser-ui",
+  "version": "1.0.0",
+  "description": "A simple UI meant to be hooked up to a texted based game.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
   },
-  "dependencies": {
-    "jquery": "^3.7.0"
-  }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saltsphinx/text-based-browser-ui.git"
+  },
+  "keywords": [
+    "UI"
+  ],
+  "author": "saltsphinx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saltsphinx/text-based-browser-ui/issues"
+  },
+  "homepage": "https://github.com/saltsphinx/text-based-browser-ui#readme"
 }
