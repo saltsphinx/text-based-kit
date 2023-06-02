@@ -13,9 +13,9 @@ function printMessage(msg, msgConfig) {
 }
 
 function printMulti(...msgs) { // returns another function
-  return function(msgConfig, breakAfterEach = true) {
+  return function(msgConfig = {} ) {
     if (Array.isArray(msgs[0])) msgs = msgs[0];
-    if (breakAfterEach || msgConfig.lineBreakCount === 0) {
+    if (msgConfig.breakAfterEach || msgConfig.lineBreakCount === 0) {
       msgs.forEach((msg) => printMessage(msg, msgConfig));
       return;
     }

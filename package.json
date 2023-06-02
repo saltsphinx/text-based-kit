@@ -1,25 +1,39 @@
 {
-  "name": "text-based-browser-ui",
+  "name": "text-based-kit",
   "version": "1.0.0",
-  "description": "A simple UI meant to be hooked up to a texted based game.",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
+  "description": "",
+  "main": "src/core.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saltsphinx/text-based-browser-ui.git"
+    "url": "git+https://github.com/saltsphinx/text-based-kit.git"
   },
-  "keywords": [
-    "UI"
-  ],
   "author": "saltsphinx",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/saltsphinx/text-based-browser-ui/issues"
+    "url": "https://github.com/saltsphinx/text-based-kit/issues"
   },
-  "homepage": "https://github.com/saltsphinx/text-based-browser-ui#readme"
+  "homepage": "https://github.com/saltsphinx/text-based-kit#readme",
+  "dependencies": {
+    "simply-pub-sub": "^1.0.0",
+    "text-based-game-engine": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.21.5",
+    "@types/jest": "^29.5.1",
+    "@webpack-cli/generators": "^3.0.4",
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "directories": {
+    "test": "tests"
+  }
 }
